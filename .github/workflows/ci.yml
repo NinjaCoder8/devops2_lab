@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs: 
-  analyze: 
+  elia: 
     runs-on: ubuntu-latest 
 
     steps:
@@ -27,9 +27,9 @@ jobs:
         run: 
           pylint $(git ls-files '*.py')
 
-  flask:
+  charbel:
     runs-on: ubuntu-latest 
-
+    needs: [elia]
     steps:
       - uses: actions/checkout@v4 
 

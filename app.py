@@ -1,8 +1,15 @@
-import math 
+"""
+This code is a test for devops github actions
+"""
 
-def ADDNumbers(x, y):
+def add_numbers(x, y):
+    """
+    This is a test function
+    """
     z = x + y
     return z 
 
-def testFunction():
-    pass
+def test_function():
+    """
+    This is a test function
+    """

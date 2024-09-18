@@ -26,4 +26,8 @@ jobs:
       - name: Analyze Code using Pylint 
         run: 
           pylint $(git ls-files '*.py')
+
+      - name: Run Flask
+        run: 
+          flask run
       
